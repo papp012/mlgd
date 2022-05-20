@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block pagetitle %}Main page{% endblock %}
+
+{% block content %}
+    <form class="blogpost-form">
+        <label for="blogpost-title-input">A tanulmány címe: </label>
+        <input id="blogpost-title-input">
+
+        <label for="blogpost-writer-input">A tanulmány szerzője: </label>
+        <input id="blogpost-writer-input">
+
+        <label for="blogpost-date-input">Dátum: </label>
+        <input id="blogpost-date-input" type="date">
+
+        <label for="blogpost-keyword-input">Kulcsszavak (vesszővel elválasztva): </label>
+        <input id="blogpost-keyword-input">
+
+        <label for="blogpost-summary-input">Absztrakt: </label>
+        <input id="blogpost-summary-input" type="file">
+
+        <label for="blogpost-maintext-input">Tanulmány: </label>
+        <input id="blogpost-maintext-input" type="file">
+
+        <label for="blogpost-citations-input">Hivatkozásjegyzék: </label>
+        <input id="blogpost-citations-input" type="file">
+
+    </form>
+{% endblock %}

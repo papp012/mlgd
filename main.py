@@ -20,6 +20,11 @@ def blog():
     return render_template('blog.html')
 
 
+@app.route('/new-blogpost')
+def display_new_blogpost_form():
+    return render_template('new-blogpost.html')
+
+
 def main():
     app.run(debug=False)
 
