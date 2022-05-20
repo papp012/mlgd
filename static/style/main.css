@@ -1,5 +1,12 @@
 :root {
-
+    --darkgreen: #205356;
+    --lightgreen: #b0bc6c;
+    --lightblue: #b3d1cd;
+    --yellow: #e3b76c;
+    --orange: #d28743;
+    --pink: #ebd5db;
+    --white: #f5f5f5;
+    --black: #161616;
 }
 
 * {
@@ -7,6 +14,7 @@
     padding: 0;
     margin: 0;
     height: 100%;
+    font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
 }
 
 .page-container {
@@ -16,21 +24,46 @@
 
 .header {
     height: 10%;
-    background-color: #3a5392;
+    background-color: var(--lightgreen);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    color: var(--white);
+
+    padding: 1em 2em;
+
+}
+
+.page-logo {
+    height: 9vh;
+}
+
+.main {
+    height: 82%;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.page-title {
+    flex: 10;
+    justify-content: center;
+    padding: 0.5em 1em;
+}
+
+.title-font {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.page-menu {
+    justify-content: flex-end;
     display: flex;
     flex-direction: row;
 }
 
-.page-logo {
-
-}
-
-.main {
-    height: 80%;
-}
-
 
 .footer {
-    height: 10%;
-    background-color: slategrey;
+    height: 8%;
+    background-color: var(--black);
+    color: var(--white);
 }
