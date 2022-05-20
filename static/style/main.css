@@ -34,14 +34,14 @@
 }
 
 .page-logo > a > img {
-    height: 7vh;
+    height: 6vh;
 }
 
 .main {
     height: 200%;
     background-color: var(--white);
     color: var(--black);
-    padding: 2em 2em;
+    padding: 3em 8em;
     text-align: justify;
 }
 
