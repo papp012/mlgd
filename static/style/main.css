@@ -50,15 +50,31 @@
     padding: 0.5em 1em;
 }
 
-.title-font {
+.title {
     font-weight: bolder;
     font-size: x-large;
+}
+
+.subtitle {
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .page-menu {
     justify-content: flex-end;
     display: flex;
     flex-direction: row;
+    padding: 0.7em 1em;
+}
+
+.menu-item > a{
+    padding-left: 2em;
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menu-item >a :hover {
+    background-color: #205356;
 }
 
 
