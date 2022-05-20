@@ -23,7 +23,7 @@
 
 
 .header {
-    height: 10%;
+    height: 8%;
     background-color: var(--lightgreen);
     display: flex;
     flex-direction: row;
@@ -35,13 +35,14 @@
 }
 
 .page-logo {
-    height: 9vh;
+    height: 7vh;
 }
 
 .main {
-    height: 82%;
+    height: 75%;
     background-color: var(--white);
     color: var(--black);
+    padding: 2em 2em;
 }
 
 .page-title {
@@ -74,7 +75,7 @@
 }
 
 .menu-item >a :hover {
-    background-color: #205356;
+    color: #205356;
 }
 
 
