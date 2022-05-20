@@ -78,8 +78,19 @@
     color: #205356;
 }
 
+.pop-up-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 60vh;
+    padding: 0 4em;
+    height: 30vh;
+    width: 100%;
+    background-color: #d28743;
+}
 
 .footer {
+
     height: 8%;
     background-color: var(--black);
     color: var(--white);
