@@ -1,0 +1,25 @@
+{% extends 'layout.html'  %}
+
+{% block pagetitle %}Login{% endblock %}
+
+{% block links %}
+    <script rel="stylesheet" src="{{ url_for('static', filename='js/login.js') }}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <div class="login-container">
+        <label for="login-name">Név: </label>
+        <input id="login-name" type="text">
+
+        <label for="login-email">Email: </label>
+        <input id="login-email" type="email">
+
+        <label for="login-password1">Jelszó: </label>
+        <input id="login-password1" type="password">
+
+        <label for="login-password2">Jelszó újra: </label>
+        <input id="login-password2" type="password">
+
+        <button id="send-login-info">Küldés</button>
+    </div>
+{% endblock %}

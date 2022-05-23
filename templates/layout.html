@@ -5,6 +5,8 @@
     <title>{% block pagetitle %}{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}">
 
+    {% block links %}{% endblock %}
+
 </head>
 <body>
     <div class="page-container">
