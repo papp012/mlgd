@@ -9,9 +9,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/login')
-def display_login_form():
-    return render_template('login.html')
+@app.route('/register')
+def display_register_form():
+    return render_template('register.html')
 
 
 @app.route('/api/save-login', methods=['POST'])
@@ -22,6 +22,10 @@ def save_login_info():
     data_manager.save_user_to_database(login_name, login_email, login_password)
     return redirect('/')
 
+
+@app.route('/login')
+def display_login_form():
+    return render_template('login.html')
 
 
 @app.route('/rolunk')
