@@ -16,6 +16,13 @@
     font-family: 'Consolas', 'Monaco', 'Bitstream Vera Sans Mono', monospace;
 }
 
+.blob {
+    border-radius: 62% 31% 42% 38% / 54% 43% 52% 37%;
+    width: 450px;
+    height: 270px;
+    background-color: var(--yellow);
+}
+
 .page-container {
     height: 80vh;
 }
