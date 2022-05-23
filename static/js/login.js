@@ -8,27 +8,16 @@ function main() {
 
 function login() {
     const loginButton = document.querySelector("#send-login-info");
-    loginButton.addEventListener('click', sendLoginInfo);
+    loginButton.addEventListener('click', async()=> {
+        let loginName = document.querySelector('#login-name').value;
+        let loginEmail = document.querySelector('#login-email').value;
+        let loginPassword1 = document.querySelector('#login-password1').value;
+        let loginPassword2 = document.querySelector('#login-password2').value;
+
+        await apiPost('/api/save-login', {loginName: loginName, loginEmail: loginEmail, loginPassword1:loginPassword1})
+    });
 }
 
-async function sendLoginInfo() {
-    let loginName = document.querySelector('#login-name');
-    let loginEmail = document.querySelector('#login-email');
-    let loginPassword1 = document.querySelector('#login-password1');
-    let loginPassword2 = document.querySelector('#login-password2');
-
-    if (loginPassword1 === loginPassword2) {
-        await apiPost('/api/save-login', {
-            loginName: loginName,
-            loginEmail: loginEmail,
-            loginPassword1: loginPassword1,
-            loginPassword2: loginPassword2
-        });
-    }
-    else {
-        alert("different passwords!");
-    }
-}
 
 
 async function apiPost(url, payload) {
@@ -40,5 +29,5 @@ async function apiPost(url, payload) {
         },
         body: JSON.stringify(payload)
     });
-    return response.json();
+    //return response.json();
 }

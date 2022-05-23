@@ -1,6 +1,5 @@
-from flask import Flask, render_template, url_for, jsonify
-import math
-
+from flask import Flask, render_template, url_for, jsonify, request, redirect
+from data import data_manager
 
 app = Flask('codecool_series')
 
@@ -15,9 +14,14 @@ def display_login_form():
     return render_template('login.html')
 
 
-@app.route('/api/save-login')
+@app.route('/api/save-login', methods=['POST'])
 def save_login_info():
-    return ""
+    login_name = request.get_json()['loginName']
+    login_email = request.get_json()['loginEmail']
+    login_password = request.get_json()['loginPassword1']
+    data_manager.save_user_to_database(login_name, login_email, login_password)
+    return redirect('/')
+
 
 
 @app.route('/rolunk')

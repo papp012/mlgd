@@ -2,7 +2,7 @@ certifi==2021.10.8
 chardet==3.0.4
 charset-normalizer==2.0.12
 click==8.0.4
-Flask==2.0.3
+Flask~=2.0.2
 idna==2.7
 itsdangerous==2.1.1
 Jinja2==3.0.3
@@ -12,3 +12,5 @@ python-dotenv==0.13.0
 requests==2.19.1
 urllib3==1.23
 Werkzeug==2.0.3
+psycopg2~=2.9.3
+bcrypt~=3.1.7

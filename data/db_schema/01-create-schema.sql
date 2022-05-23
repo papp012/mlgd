@@ -3,8 +3,9 @@ DROP TABLE IF EXISTS articles;
 
 
 CREATE TABLE users (
-    id       INTEGER PRIMARY KEY NOT NULL,
+    id      SERIAL PRIMARY KEY NOT NULL,
     name    VARCHAR(200)        NOT NULL,
+    email VARCHAR(200)  not null,
     password varchar(200)
 );
 
